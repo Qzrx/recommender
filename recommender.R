@@ -12,8 +12,6 @@ setup_data <- function(input){
   input <- dcast(input, user_id ~ advertiser_id)
   row.names(input) <- input[,"user_id"]
   input
-#   input[,!names(input)=="user_id"] <- replace(input[,!names(input)=="user_id"], !is.na(input[,!names(input)=="user_id"]), 1) # order matters!
-#   input                            <- replace(input, is.na(input), 0)
 }
 
 users <- setup_data(read.csv(path_to_training_data))
