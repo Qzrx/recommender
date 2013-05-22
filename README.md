@@ -2,7 +2,8 @@ recommender
 ===========
 
 A (very naive) system for suggestions  
-Todo:  
+
+Todo:
 * Do more testing (unit tests?)
 * Build in some out-of-sample testing
 * Improve runtime/identify slowdown source
